@@ -31,7 +31,7 @@ function formatNairaShort(value: number) {
 // Maps each business to its chartConfig key, so the legend outside the
 // chart (which can't see the chart's scoped --color-* variables) can use
 // the same colors via the global --chart-N variables instead.
-const legendColorKey: Record<string, keyof typeof chartConfig> = {
+const legendColorKey: Record<string, "farm" | "fahion House" | "properties"> = {
   Farm: "farm",
   "Fashion House": "fashionHouse",
   Properties: "properties",
